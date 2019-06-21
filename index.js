@@ -2,6 +2,13 @@ function takeANumber(line, name) {
   line.push(name);
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
+var ticketnumber = 0;
+function takeANumber(line, ticketnumber) {
+  ticketnumber++;
+  line.push(ticketnumber);
+  return `Welcome, you have ticket number${ticketnumber}`;
+}
+
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
@@ -24,4 +31,4 @@ function currentLine(line) {
 }
     
     
-    
+
